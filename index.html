@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madhav Shah Sisodiya - Full-Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#eff6ff',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-inter bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 shadow-lg transition-all duration-300" id="navbar">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="text-2xl font-bold bg-gradient-to-r from-primary-600 to-primary-500 bg-clip-text text-transparent">
+                    MS
+                </div>
+                <ul class="hidden md:flex space-x-8">
+                    <li><a href="#home" class="nav-link text-gray-700 hover:text-primary-600 font-medium transition-colors duration-300 relative group">Home</a></li>
+                    <li><a href="#about" class="nav-link text-gray-700 hover:text-primary-600 font-medium transition-colors duration-300 relative group">About</a></li>
+                    <li><a href="#experience" class="nav-link text-gray-700 hover:text-primary-600 font-medium transition-colors duration-300 relative group">Experience</a></li>
+                    <li><a href="#skills" class="nav-link text-gray-700 hover:text-primary-600 font-medium transition-colors duration-300 relative group">Skills</a></li>
+                    <li><a href="#contact" class="nav-link text-gray-700 hover:text-primary-600 font-medium transition-colors duration-300 relative group">Contact</a></li>
+                </ul>
+                <div class="md:hidden hamburger cursor-pointer">
+                    <span class="block w-6 h-0.5 bg-gray-700 mb-1 transition-all duration-300"></span>
+                    <span class="block w-6 h-0.5 bg-gray-700 mb-1 transition-all duration-300"></span>
+                    <span class="block w-6 h-0.5 bg-gray-700 transition-all duration-300"></span>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden mobile-menu hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 bg-white shadow-lg">
+                <a href="#home" class="block px-3 py-2 text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-md transition-colors duration-300">Home</a>
+                <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-md transition-colors duration-300">About</a>
+                <a href="#experience" class="block px-3 py-2 text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-md transition-colors duration-300">Experience</a>
+                <a href="#skills" class="block px-3 py-2 text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-md transition-colors duration-300">Skills</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-md transition-colors duration-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 flex items-center pt-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight hero-title">
+                        Madhav Shah Sisodiya
+                    </h1>
+                    <h2 class="text-xl md:text-2xl font-semibold text-primary-600 mb-6">
+                        Full-Stack Developer
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        Specialized in secure authentication, large-scale performance optimization, and enterprise integrations across Google Workspace, Office365, and Okta.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#contact" class="btn-primary inline-block px-8 py-3 bg-gradient-to-r from-primary-600 to-primary-500 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 text-center">
+                            Get In Touch
+                        </a>
+                        <a href="#experience" class="btn-secondary inline-block px-8 py-3 border-2 border-primary-600 text-primary-600 font-semibold rounded-lg hover:bg-primary-600 hover:text-white transform hover:-translate-y-1 transition-all duration-300 text-center">
+                            View Experience
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-center lg:justify-end">
+                    <div class="w-64 h-64 md:w-80 md:h-80 bg-gradient-to-br from-primary-600 to-primary-500 rounded-full flex items-center justify-center shadow-2xl">
+                        <i class="fas fa-user text-6xl md:text-8xl text-white"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-16 relative">
+                About Me
+                <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-gradient-to-r from-primary-600 to-primary-500 rounded-full"></div>
+            </h2>
+            <div class="grid lg:grid-cols-3 gap-12">
+                <div class="lg:col-span-2">
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        I'm a Full-Stack Developer with 4+ years of experience in Python/Django, JavaScript/jQuery, and cloud-native systems (AWS, Docker, microservices). 
+                        I specialize in building secure, scalable authentication systems and optimizing enterprise integrations.
+                    </p>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        Currently working at Foxpass/Splashtop Inc, I focus on RADIUS and LDAP authentication services, 
+                        implementing secure protocols like EAP-TLS, SCEP, and RadSec to strengthen reliability and compliance.
+                    </p>
+                </div>
+                <div class="lg:col-span-1">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-6">Education</h3>
+                    <div class="bg-gray-50 p-6 rounded-xl border-l-4 border-primary-600">
+                        <h4 class="font-semibold text-gray-900 mb-2">Indian Institute of Technology (ISM), Dhanbad</h4>
+                        <p class="text-gray-600 mb-2">Bachelor of Technology in Electrical Engineering</p>
+                        <span class="text-primary-600 font-medium text-sm">July 2017 - May 2021</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-16 relative">
+                Experience
+                <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-gradient-to-r from-primary-600 to-primary-500 rounded-full"></div>
+            </h2>
+            <div class="space-y-12">
+                <!-- Foxpass/Splashtop -->
+                <div class="experience-item bg-white p-8 rounded-xl shadow-lg border-l-4 border-primary-600 transform transition-all duration-500 opacity-0 translate-y-8">
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Software Developer (Remote)</h3>
+                        <h4 class="text-lg font-medium text-primary-600 mb-2">Foxpass/Splashtop Inc, San Francisco, California</h4>
+                        <span class="text-primary-600 font-medium">July 2021 – Present</span>
+                    </div>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <span class="text-primary-600 mr-3 mt-1">▸</span>
+                            Built features across RADIUS and LDAP authentication services using Python/Django and JavaScript/jQuery, supporting enterprise-scale customers.
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-primary-600 mr-3 mt-1">▸</span>
+                            Implemented secure protocols (EAP-TLS, SCEP, RadSec), strengthening reliability and compliance.
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-primary-600 mr-3 mt-1">▸</span>
+                            Optimized user/group synchronization between Google Workspace and Azure AD, cutting sync times from minutes to seconds.
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-primary-600 mr-3 mt-1">▸</span>
+                            Designed an LDAP Search Optimizer using in-memory inverted indexes, reducing CPU by 50% and latency by 60%.
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-primary-600 mr-3 mt-1">▸</span>
+                            Built SSO and SAML-based login for the admin console, modernizing the web console experience.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Yolo Travel Tech -->
+                <div class="experience-item bg-white p-8 rounded-xl shadow-lg border-l-4 border-primary-600 transform transition-all duration-500 opacity-0 translate-y-8">
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Software Development Intern</h3>
+                        <h4 class="text-lg font-medium text-primary-600 mb-2">Yolo Travel Tech Private Limited, Gurugram</h4>
+                        <span class="text-primary-600 font-medium">April 2020 – July 2020</span>
+                    </div>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <span class="text-primary-600 mr-3 mt-1">▸</span>
+                            Integrated Uber Rides SDK into YoloBus backend microservices, enabling seamless third-party ride booking.
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-primary-600 mr-3 mt-1">▸</span>
+                            Designed and implemented coupon and referral program features, boosting customer acquisition and engagement.
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-primary-600 mr-3 mt-1">▸</span>
+                            Integrated Kaleyra WhatsApp API with communication services for real-time chatbot interactions.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- I&We -->
+                <div class="experience-item bg-white p-8 rounded-xl shadow-lg border-l-4 border-primary-600 transform transition-all duration-500 opacity-0 translate-y-8">
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Serverless Application Development Intern</h3>
+                        <h4 class="text-lg font-medium text-primary-600 mb-2">I&We, Kolkata</h4>
+                        <span class="text-primary-600 font-medium">May 2018 – July 2018</span>
+                    </div>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <span class="text-primary-600 mr-3 mt-1">▸</span>
+                            Built a cross-platform mobile app with Ionic and integrated IoT device data streams into AWS microservices.
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-primary-600 mr-3 mt-1">▸</span>
+                            Enabled real-time monitoring and control through cloud-based solutions.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-16 relative">
+                Skills & Technologies
+                <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-gradient-to-r from-primary-600 to-primary-500 rounded-full"></div>
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="skill-category bg-gray-50 p-6 rounded-xl border border-gray-200 transform transition-all duration-500 opacity-0 translate-y-8">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4 text-center">Programming Languages</h3>
+                    <div class="flex flex-wrap gap-2 justify-center">
+                        <span class="skill-tag px-4 py-2 bg-gradient-to-r from-primary-600 to-primary-500 text-white rounded-full text-sm font-medium">Python</span>
+                        <span class="skill-tag px-4 py-2 bg-gradient-to-r from-primary-600 to-primary-500 text-white rounded-full text-sm font-medium">JavaScript</span>
+                        <span class="skill-tag px-4 py-2 bg-gradient-to-r from-primary-600 to-primary-500 text-white rounded-full text-sm font-medium">HTML/CSS</span>
+                        <span class="skill-tag px-4 py-2 bg-gradient-to-r from-primary-600 to-primary-500 text-white rounded-full text-sm font-medium">SQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-category bg-gray-50 p-6 rounded-xl border border-gray-200 transform transition-all duration-500 opacity-0 translate-y-8">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4 text-center">Frameworks & Libraries</h3>
+                    <div class="flex flex-wrap gap-2 justify-center">
+                        <span class="skill-tag px-4 py-2 bg-gradient-to-r from-primary-600 to-primary-500 text-white rounded-full text-sm font-medium">Django</span>
+                        <span class="skill-tag px-4 py-2 bg-gradient-to-r from-primary-600 to-primary-500 text-white rounded-full text-sm font-medium">jQuery</span>
+                        <span class="skill-tag px-4 py-2 bg-gradient-to-r from-primary-600 to-primary-500 text-white rounded-full text-sm font-medium">Ionic</span>
+                    </div>
+                </div>
+
+                <div class="skill-category bg-gray-50 p-6 rounded-xl border border-gray-200 transform transition-all duration-500 opacity-0 translate-y-8">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4 text-center">Cloud & DevOps</h3>
+                    <div class="flex flex-wrap gap-2 justify-center">
+                        <span class="skill-tag px-4 py-2 bg-gradient-to-r from-primary-600 to-primary-500 text-white rounded-full text-sm font-medium">AWS</span>
+                        <span class="skill-tag px-4 py-2 bg-gradient-to-r from-primary-600 to-primary-500 text-white rounded-full text-sm font-medium">Docker</span>
+                        <span class="skill-tag px-4 py-2 bg-gradient-to-r from-primary-600 to-primary-500 text-white rounded-full text-sm font-medium">Microservices</span>
+                        <span class="skill-tag px-4 py-2 bg-gradient-to-r from-primary-600 to-primary-500 text-white rounded-full text-sm font-medium">Git</span>
+                    </div>
+                </div>
+
+                <div class="skill-category bg-gray-50 p-6 rounded-xl border border-gray-200 transform transition-all duration-500 opacity-0 translate-y-8">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4 text-center">Security & Protocols</h3>
+                    <div class="flex flex-wrap gap-2 justify-center">
+                        <span class="skill-tag px-4 py-2 bg-gradient-to-r from-primary-600 to-primary-500 text-white rounded-full text-sm font-medium">LDAP</span>
+                        <span class="skill-tag px-4 py-2 bg-gradient-to-r from-primary-600 to-primary-500 text-white rounded-full text-sm font-medium">RADIUS</span>
+                        <span class="skill-tag px-4 py-2 bg-gradient-to-r from-primary-600 to-primary-500 text-white rounded-full text-sm font-medium">SAML</span>
+                        <span class="skill-tag px-4 py-2 bg-gradient-to-r from-primary-600 to-primary-500 text-white rounded-full text-sm font-medium">OAuth</span>
+                        <span class="skill-tag px-4 py-2 bg-gradient-to-r from-primary-600 to-primary-500 text-white rounded-full text-sm font-medium">EAP-TLS</span>
+                        <span class="skill-tag px-4 py-2 bg-gradient-to-r from-primary-600 to-primary-500 text-white rounded-full text-sm font-medium">SCEP</span>
+                        <span class="skill-tag px-4 py-2 bg-gradient-to-r from-primary-600 to-primary-500 text-white rounded-full text-sm font-medium">RadSec</span>
+                    </div>
+                </div>
+
+                <div class="skill-category bg-gray-50 p-6 rounded-xl border border-gray-200 transform transition-all duration-500 opacity-0 translate-y-8">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4 text-center">Monitoring & Tools</h3>
+                    <div class="flex flex-wrap gap-2 justify-center">
+                        <span class="skill-tag px-4 py-2 bg-gradient-to-r from-primary-600 to-primary-500 text-white rounded-full text-sm font-medium">Monitoring</span>
+                        <span class="skill-tag px-4 py-2 bg-gradient-to-r from-primary-600 to-primary-500 text-white rounded-full text-sm font-medium">Logging</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-16 relative">
+                Projects
+                <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-gradient-to-r from-primary-600 to-primary-500 rounded-full"></div>
+            </h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="project-card bg-white p-8 rounded-xl shadow-lg transform transition-all duration-500 opacity-0 scale-95">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Smart B-cane</h3>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Created "Smart B-cane" assistive device with object detection, text-to-speech, haptic feedback, and emergency broadcasting using Python, Twilio API, and AWS.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-200 text-gray-700 rounded-full text-sm font-medium">Python</span>
+                        <span class="px-3 py-1 bg-gray-200 text-gray-700 rounded-full text-sm font-medium">Twilio API</span>
+                        <span class="px-3 py-1 bg-gray-200 text-gray-700 rounded-full text-sm font-medium">AWS</span>
+                        <span class="px-3 py-1 bg-gray-200 text-gray-700 rounded-full text-sm font-medium">IoT</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-16 relative">
+                Get In Touch
+                <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-gradient-to-r from-primary-600 to-primary-500 rounded-full"></div>
+            </h2>
+            <div class="max-w-2xl mx-auto">
+                <div class="space-y-6">
+                    <div class="contact-item bg-gray-50 p-6 rounded-xl flex items-center gap-4 hover:transform hover:-translate-y-1 transition-all duration-300">
+                        <i class="fas fa-envelope text-2xl text-primary-600 w-10 text-center"></i>
+                        <a href="mailto:madhavshahsisodiya@gmail.com" class="text-gray-900 font-medium hover:text-primary-600 transition-colors duration-300">
+                            madhavshahsisodiya@gmail.com
+                        </a>
+                    </div>
+                    <div class="contact-item bg-gray-50 p-6 rounded-xl flex items-center gap-4 hover:transform hover:-translate-y-1 transition-all duration-300">
+                        <i class="fab fa-linkedin text-2xl text-primary-600 w-10 text-center"></i>
+                        <a href="https://linkedin.com/in/madhav-shah-sisodiya" target="_blank" class="text-gray-900 font-medium hover:text-primary-600 transition-colors duration-300">
+                            linkedin.com/in/madhav-shah-sisodiya
+                        </a>
+                    </div>
+                    <div class="contact-item bg-gray-50 p-6 rounded-xl flex items-center gap-4 hover:transform hover:-translate-y-1 transition-all duration-300">
+                        <i class="fab fa-github text-2xl text-primary-600 w-10 text-center"></i>
+                        <a href="https://github.com/MadhavShah" target="_blank" class="text-gray-900 font-medium hover:text-primary-600 transition-colors duration-300">
+                            github.com/MadhavShah
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2024 Madhav Shah Sisodiya. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

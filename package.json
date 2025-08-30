@@ -1,0 +1,23 @@
+{
+  "name": "madhav-portfolio",
+  "version": "1.0.0",
+  "description": "Madhav Shah Sisodiya's professional portfolio website",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "serve": "npx serve .",
+    "dev": "python -m http.server 8000"
+  },
+  "keywords": [
+    "portfolio",
+    "developer",
+    "fullstack",
+    "python",
+    "django",
+    "aws"
+  ],
+  "author": "Madhav Shah Sisodiya",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {}
+}
